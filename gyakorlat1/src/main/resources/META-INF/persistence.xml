@@ -1,0 +1,24 @@
+<persistence xmlns="http://jakarta.ee/xml/ns/persistence">
+	<persistence-unit name="workflow" transaction-type="RESOURCE_LOCAL">
+	<class>gyakorlat1.Event</class>
+	<class>gyakorlat1.Booking</class>
+		<properties>
+			<property 
+				name= "jakarta.persistence.schema-generation.database.action" 
+				value="drop-and-create"/>
+			
+			<property 
+				name="hibernate.connection.username" 
+				value="ragasitsa" />
+				
+			<property 
+				name="hibernate.connection.password" 
+				value="ragasitsa" />
+				
+			<property 
+				name="hibernate.connection.url" 
+				value="jdbc:postgresql://89.116.229.207:36500/ragasitsa" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
